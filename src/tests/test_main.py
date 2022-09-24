@@ -1,6 +1,6 @@
 import pytest
-from unittest.mock import Mock, patch
-from src.main import main, _add
+from unittest.mock import patch
+from src.main import main
 
 @pytest.mark.parametrize(
     "x, y, z",

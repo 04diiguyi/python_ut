@@ -2,11 +2,15 @@ class Person:
     age = 30
     salary = 120000
 
-    def __init__(self, age) -> None:
+    def __init__(self, age, salary) -> None:
         self.age = age
+        self.salary = salary
 
     def get_age(self) -> int:
         return self.age
+
+    def increase_age(self):
+        self.age += 1
 
     def increase_salary(self, increase):
         self.salary += increase
