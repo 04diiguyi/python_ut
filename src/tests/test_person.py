@@ -36,7 +36,7 @@ def test_person_property():
     assert age1 == age_value
     assert age2 == age_return_value
 
-# Mock creation of a class and call its function multiple times
+# Mock an object and creates its nested mock object
 def test_raise_salary():
     mock_person = Mock()
     mock_increase_salary = Mock()
