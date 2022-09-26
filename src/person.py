@@ -21,8 +21,10 @@ class Person:
 def raise_salary(person: Person, raise_base: int):
     person.increase_salary(raise_base)
 
-def example() -> int:
-    person = Person(32)
-    raise_salary(person, 5000)
-    raise_salary(person, 6000)
+def example_raise_salary(base_increases) -> int:
+    person = Person(32, 1000)
+
+    for increase in base_increases:
+        raise_salary(person, increase)
+    
     return person.get_salary()
